@@ -24,3 +24,20 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* BesBuy brand helpers */
+.brand-header {
+  background-color: #0046be; /* Best Buy-like blue */
+}
+
+.brand-tag {
+  background-color: #ffcc00; /* Tag yellow */
+}
+
+.container-max {
+  max-width: 1280px;
+}
+
+.header-shadow {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
