@@ -6,7 +6,7 @@ export default function Header() {
   const [query, setQuery] = useState("");
 
   return (
-    <header className="brand-header text-white header-shadow">
+    <header className="sticky top-0 z-50 brand-header text-white header-shadow">
       <div className="mx-auto container-max px-4">
         <div className="flex items-center gap-4 py-3">
           {/* Brand */}
@@ -23,11 +23,11 @@ export default function Header() {
 
           {/* Search */}
           <div className="flex-1">
-            <div className="flex items-center bg-white rounded-full overflow-hidden">
+            <div className="flex items-center bg-white/95 backdrop-blur rounded-full overflow-hidden ring-1 ring-white/30 focus-within:ring-2">
               <input
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                className="w-full px-4 py-2 text-black outline-none"
+                className="w-full px-4 py-2 text-black outline-none placeholder:text-zinc-500"
                 placeholder="Search products, brands and categories"
               />
               <button
@@ -55,7 +55,7 @@ export default function Header() {
         </div>
 
         {/* Secondary nav */}
-        <div className="flex items-center gap-6 text-sm py-2">
+        <div className="flex items-center gap-6 text-sm py-2 border-t border-white/20">
           <Link href="#" className="hover:underline">
             Top Deals
           </Link>

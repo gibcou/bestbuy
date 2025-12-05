@@ -18,9 +18,13 @@ export default function CategoryGrid() {
         <h3 className="text-xl font-semibold mb-4">Shop by Category</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {categories.map((c) => (
-            <Link key={c.name} href="#" className="rounded-xl border p-4 flex items-center gap-3 bg-white hover:shadow-sm">
+            <Link
+              key={c.name}
+              href="#"
+              className="rounded-2xl border border-zinc-200 p-4 flex items-center gap-3 bg-white hover:shadow-md transition-transform hover:-translate-y-0.5"
+            >
               <img src={c.icon} alt="" className="w-10 h-10" />
-              <span className="text-sm font-medium">{c.name}</span>
+              <span className="text-sm font-semibold text-zinc-900">{c.name}</span>
             </Link>
           ))}
         </div>

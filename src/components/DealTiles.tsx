@@ -13,8 +13,12 @@ export default function DealTiles() {
       <div className="mx-auto container-max px-4 py-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {deals.map((d) => (
-            <Link key={d.title} href={d.href} className={`${d.color} rounded-xl p-4 border hover:shadow-sm transition-shadow`}>
-              <div className="font-semibold">{d.title}</div>
+            <Link
+              key={d.title}
+              href={d.href}
+              className={`${d.color} rounded-2xl p-5 border border-zinc-200 hover:shadow-md transition-transform hover:-translate-y-0.5 bg-white/70 backdrop-blur`}
+            >
+              <div className="font-semibold text-zinc-900">{d.title}</div>
               <div className="text-sm text-zinc-600">{d.desc}</div>
             </Link>
           ))}
