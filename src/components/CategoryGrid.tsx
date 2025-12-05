@@ -1,14 +1,14 @@
 import Link from "next/link";
 
 const categories = [
-  { name: "TV & Home Theater", icon: "/globe.svg" },
-  { name: "Computers & Tablets", icon: "/window.svg" },
-  { name: "Video Games", icon: "/next.svg" },
-  { name: "Cell Phones", icon: "/vercel.svg" },
-  { name: "Appliances", icon: "/file.svg" },
-  { name: "Audio", icon: "/globe.svg" },
-  { name: "Cameras", icon: "/window.svg" },
-  { name: "Wearable Tech", icon: "/file.svg" },
+  { name: "TV & Home Theater", icon: "globe.svg" },
+  { name: "Computers & Tablets", icon: "window.svg" },
+  { name: "Video Games", icon: "next.svg" },
+  { name: "Cell Phones", icon: "vercel.svg" },
+  { name: "Appliances", icon: "file.svg" },
+  { name: "Audio", icon: "globe.svg" },
+  { name: "Cameras", icon: "window.svg" },
+  { name: "Wearable Tech", icon: "file.svg" },
 ];
 
 export default function CategoryGrid() {

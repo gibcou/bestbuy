@@ -22,8 +22,8 @@ export default function Hero() {
             </div>
           </div>
           <div className="relative w-full h-48 md:h-64 rounded-xl overflow-hidden bg-white border">
-            {/* Simple illustrative banner using public SVG */}
-            <img src="/window.svg" alt="Promo" className="w-full h-full object-cover" />
+            {/* Use relative path for GitHub Pages under /bestbuy */}
+            <img src="window.svg" alt="Promo" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
